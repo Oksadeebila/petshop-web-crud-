@@ -1,0 +1,259 @@
+:root {
+  --blue : #3A38FF;
+  --navy : #101041;
+  --white : #FFFFFF;
+  --soft-grey : #DFE2E7;
+  --dark-grey : #8C9295;
+  --blue-baby : #ececfe;
+  --soft-blue : #F9FBFC;
+  --baby-yellow : #ffda21;
+  --fwbold : 700;
+  --fwextrabold : 800;
+  --fwsemibold : 600;
+  --fwmedium : 500;
+  --fwreguler : 400;
+  --fwlight : 300;
+}
+
+body {
+  font-family: 'Poppins', 'sans-serif';
+  background-color: var(--blue-baby);
+}
+
+.big-header {
+  font-weight: var(--fwextrabold);
+  color: var(--navy);
+  font-size: 26px;
+  margin: 0;
+}
+
+.small-header {
+  font-weight: var(--fwbold);
+  color: var(--navy);
+  font-size: 22px;
+  margin: 0;
+}
+
+.primary-copy {
+  font-weight: var(--fwreguler);
+  color: var(--dark-grey);
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.btn-primary {
+  padding: 12px 20px 12px 20px;
+  background-color: var(--blue);
+  color: var(--white);
+  font-weight: var(--fwsemibold);
+  font-size: 16px;
+  border-radius: 50px;
+  border: transparent;
+}
+
+.btn-primary:hover {
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+.btn-secondary {
+  padding: 12px 20px 12px 20px;
+  background-color: var(--soft-grey);
+  color: var(--navy);
+  font-weight: var(--fwmedium);
+  font-size: 16px;
+  border-radius: 50px;
+  border: transparent;
+}
+
+.btn-secondary:hover {
+  background-color: var(--navy);
+  color: var(--white) !important;
+}
+
+.navbar-nav .nav-item a:hover {
+  color: var(--blue);
+  transition : all 0.3s ease;
+  font-weight: var(--fwsemibold);
+}
+
+.navbar-nav .nav-item a {
+  color: var(--navy);
+  transition : all 0.3s ease;
+  font-weight: var(--fwreguler);
+
+}
+
+.navbar-nav .nav-item {
+  padding-left: 25px;
+  padding-right: 25px;
+  font-weight: var(--fwreguler);
+}
+
+.navbar-brand {
+  font-weight: var(--fwextrabold);
+  color: #101041;
+  font-size: 26px;
+}
+
+/* agar navabrnya tidak berpadding atas */
+.navbar {
+  --bs-navbar-padding-y : 0;
+}
+
+
+.cashier-navbar {
+  padding: 30px;
+  background-color: var(--white);
+  border-bottom-left-radius: 26px;
+  border-bottom-right-radius: 26px;
+}
+
+.cashier-header{
+  padding: 20px;
+  width : 1366px;
+  height: 569;
+}
+
+
+.container-kategori {
+  display : grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap : 5px;
+}
+
+.card-kategori {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--baby-yellow);
+}
+
+.ikon {
+  width: 40%;
+}
+
+
+.card-kategori a {
+  margin-bottom: 0;
+  text-decoration: none;
+  color: #101041;
+}
+
+.sub-title {
+  font-size: 32px;
+  color:  var(--baby-yellow);
+  font-weight: var(--fwextrabold);
+  background-color: #101041;
+  padding: 12px;
+}
+
+.produk-container {
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  gap: 15px;
+  padding: 20px;
+}
+
+.produk-card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+}
+
+.produk-card:hover {
+  border : 1px dashed var(--blue);
+}
+
+.image-card {
+  height: 80%;
+  margin-bottom: 12px;
+}
+
+.image-card img {
+  object-fit : cover;
+}
+
+.main-content h5 {
+  font-size: 16px;
+  margin-bottom: 2px;
+  color: var(--blue);
+  font-weight: var(--fwbold);
+  text-align: center;
+}
+
+.main-content span {
+  font-size: 16px;
+}
+
+.main-content span a {
+  text-decoration: none;
+  color: black;
+}
+.main-content span a:hover {
+  color: var(--blue);
+}
+
+.main content {
+  height: 30%;
+}
+
+.btn-detail {
+  background-color: var(--baby-yellow);
+  border : none; 
+  padding: 5px ;
+  width : 70px;
+  border-radius: 2px;
+
+}
+.btn-detail a {
+  text-decoration: none;
+  color: var(--blue);
+  font-weight: var(--fwbold);
+
+}
+
+.action {
+  display : grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.btn-detail-hapus {
+  background-color: #ff2121;;
+  border : none; 
+  padding: 5px ;
+  width : 70px;
+  border-radius: 2px;
+}
+
+.btn-detail-hapus a {
+  text-decoration: none;
+  color: white;
+  font-weight: var(--fwbold);
+}
+  
+.action {
+  margin-top: 5px;
+}
+
+.container-caraPesan {
+  display: flex;
+  flex-direction: row;
+  background-color: #101041;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.container-cp {
+  width: 50%;
+  
+}
+
+.container-tentangKami {
+  width: 50%;
+}
